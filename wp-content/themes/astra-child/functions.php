@@ -151,27 +151,65 @@ function handle_custom_contact_form() {
 // -------------------------------------------------------------
 // 4. OPEN GRAPH & SOCIAL SHARE PREVIEW FOR HOMEPAGE
 // -------------------------------------------------------------
+const SKYLARK_DEFAULT_TITLE = 'Skylark Apparel Limited';
+const SKYLARK_DEFAULT_DESC  = 'Skylark Apparel Limited is a premier knitwear manufacturer and apparel exporter in Bangladesh, offering sustainable manufacturing, sampling, and global garment production.';
+
+// Open Graph & Twitter Titles
 add_filter( 'wpseo_opengraph_title', 'skylark_custom_og_title', 99 );
 add_filter( 'wpseo_twitter_title', 'skylark_custom_og_title', 99 );
 function skylark_custom_og_title( $title ) {
     if ( is_front_page() || is_home() ) {
-        return 'Skylark Apparel Limited';
+        return SKYLARK_DEFAULT_TITLE;
     }
     return $title;
 }
 
+// Site Name
 add_filter( 'wpseo_opengraph_site_name', function( $name ) {
-    return 'Skylark Apparel Limited';
+    return SKYLARK_DEFAULT_TITLE;
 }, 99 );
 
+// Meta Description & Open Graph / Twitter Description
+add_filter( 'wpseo_metadesc', 'skylark_custom_social_desc', 99 );
+add_filter( 'wpseo_opengraph_desc', 'skylark_custom_social_desc', 99 );
+add_filter( 'wpseo_twitter_description', 'skylark_custom_social_desc', 99 );
+function skylark_custom_social_desc( $desc ) {
+    if ( is_front_page() || is_home() ) {
+        return SKYLARK_DEFAULT_DESC;
+    }
+    return $desc;
+}
+
+// Open Graph & Twitter Image (Lightweight ~40KB JPEG for WhatsApp & Social Crawlers)
 add_filter( 'wpseo_opengraph_image', 'skylark_custom_og_image', 99 );
 add_filter( 'wpseo_twitter_image', 'skylark_custom_og_image', 99 );
 function skylark_custom_og_image( $img ) {
     if ( is_front_page() || is_home() ) {
-        return home_url( '/wp-content/uploads/2026/05/skylark-social-share.png' );
+        return home_url( '/wp-content/uploads/2026/05/skylark-social-share.jpg' );
     }
     return $img;
 }
+
+add_filter( 'wpseo_opengraph_image_width', function( $width ) {
+    if ( is_front_page() || is_home() ) {
+        return 800;
+    }
+    return $width;
+}, 99 );
+
+add_filter( 'wpseo_opengraph_image_height', function( $height ) {
+    if ( is_front_page() || is_home() ) {
+        return 800;
+    }
+    return $height;
+}, 99 );
+
+add_filter( 'wpseo_opengraph_image_type', function( $type ) {
+    if ( is_front_page() || is_home() ) {
+        return 'image/jpeg';
+    }
+    return $type;
+}, 99 );
 
 add_filter( 'wpseo_twitter_card_type', function( $type ) {
     if ( is_front_page() || is_home() ) {
@@ -180,15 +218,23 @@ add_filter( 'wpseo_twitter_card_type', function( $type ) {
     return $type;
 }, 99 );
 
+// Fallback direct meta tags if Yoast is ever inactive
 add_action( 'wp_head', 'skylark_fallback_social_meta', 1 );
 function skylark_fallback_social_meta() {
     if ( ( is_front_page() || is_home() ) && ! defined( 'WPSEO_VERSION' ) ) {
-        $img_url = home_url( '/wp-content/uploads/2026/05/skylark-social-share.png' );
-        echo '<meta property="og:title" content="Skylark Apparel Limited" />' . "\n";
-        echo '<meta property="og:site_name" content="Skylark Apparel Limited" />' . "\n";
+        $img_url = home_url( '/wp-content/uploads/2026/05/skylark-social-share.jpg' );
+        echo '<meta name="description" content="' . esc_attr( SKYLARK_DEFAULT_DESC ) . '" />' . "\n";
+        echo '<meta property="og:title" content="' . esc_attr( SKYLARK_DEFAULT_TITLE ) . '" />' . "\n";
+        echo '<meta property="og:description" content="' . esc_attr( SKYLARK_DEFAULT_DESC ) . '" />' . "\n";
+        echo '<meta property="og:site_name" content="' . esc_attr( SKYLARK_DEFAULT_TITLE ) . '" />' . "\n";
         echo '<meta property="og:image" content="' . esc_url( $img_url ) . '" />' . "\n";
+        echo '<meta property="og:image:width" content="800" />' . "\n";
+        echo '<meta property="og:image:height" content="800" />' . "\n";
+        echo '<meta property="og:image:type" content="image/jpeg" />' . "\n";
         echo '<meta name="twitter:card" content="summary_large_image" />' . "\n";
-        echo '<meta name="twitter:title" content="Skylark Apparel Limited" />' . "\n";
+        echo '<meta name="twitter:title" content="' . esc_attr( SKYLARK_DEFAULT_TITLE ) . '" />' . "\n";
+        echo '<meta name="twitter:description" content="' . esc_attr( SKYLARK_DEFAULT_DESC ) . '" />' . "\n";
         echo '<meta name="twitter:image" content="' . esc_url( $img_url ) . '" />' . "\n";
     }
 }
+
