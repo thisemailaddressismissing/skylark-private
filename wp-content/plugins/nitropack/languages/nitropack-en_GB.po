@@ -1,0 +1,1423 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: NitroPack 1.5.17\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nitropack-"
+"wordpress\n"
+"Last-Translator: \n"
+"Language-Team: English (UK)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-12-30T04:57:27+01:00\n"
+"PO-Revision-Date: 2025-10-24 12:15+0000\n"
+"Language: en_GB\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: nitropack\n"
+
+#: diagnostics.php:167
+msgid " is a file not a directory"
+msgstr ""
+
+#: view/dashboard.php:254 view/dashboard.php:260
+#, php-format
+msgid "%1$s out of %2$s"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:741
+#, php-format
+msgid "%s deactivated successfully."
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:746
+#, php-format
+msgid "%s is not active."
+msgstr ""
+
+#: view/modals/modal-plugin-deactivate.php:81
+msgid "..."
+msgstr ""
+
+#: view/preview-site.php:35
+msgid ""
+"<b>Preview</b> the newly optimized version and give it your final approval"
+msgstr ""
+
+#: classes/WordPress/Settings/Logger.php:69
+msgid "Action"
+msgstr ""
+
+#: view/dashboard.php:155 view/dashboard-oneclick.php:102
+msgid ""
+"Activated when manual setups are made. Ideal for advanced NitroPack "
+"optimizations."
+msgstr ""
+
+#: view/dashboard.php:131 view/dashboard-oneclick.php:78
+#: view/preview-site.php:91
+msgid "Active Mode"
+msgstr ""
+
+#: view/modals/modal-modes.php:5
+msgid "Add HTML preconnects"
+msgstr ""
+
+#: view/dashboard.php:140 view/dashboard-oneclick.php:87
+msgid ""
+"Adds image lazy loading to standard optimizations. Uses built-in browser "
+"techniques for loading resources."
+msgstr ""
+
+#: view/connect-oneclick.php:40
+msgid "All set!"
+msgstr ""
+
+#: view/dashboard.php:367 view/dashboard-oneclick.php:291
+msgid "Allow Editors to purge cache"
+msgstr ""
+
+#: view/connect.php:142
+msgid ""
+"Api details verification failed! Please check whether you entered correct "
+"details."
+msgstr ""
+
+#: view/connect.php:19
+msgid "API key"
+msgstr ""
+
+#: view/connect.php:31
+msgid "API key "
+msgstr ""
+
+#: view/connect.php:25
+msgid ""
+"API Key is a unique alphanumeric identifier assigned to each website using "
+"NitroPack."
+msgstr ""
+
+#: view/connect.php:35 view/connect.php:49
+msgid "API secret key"
+msgstr ""
+
+#: classes/WordPress/Settings/OptimizationLevel.php:41
+msgid "Applies basic optimizations"
+msgstr ""
+
+#: view/dashboard.php:150 view/dashboard-oneclick.php:97
+msgid ""
+"Applies deferred JS and advanced resource loading for optimal performance "
+"and Core Web Vitals."
+msgstr ""
+
+#: view/modals/modal-disconnect.php:13 view/modals/modal-disconnect.php:47
+#: view/modals/modal-disconnect.php:59
+msgid "Are you sure you want to disconnect NitroPack?"
+msgstr ""
+
+#: view/modals/modal-unsaved-changes.php:14
+msgid "Are you sure you want to leave this page?"
+msgstr ""
+
+#: view/modals/modal-purge-cache.php:13
+msgid "Are you sure you want to purge your cache?"
+msgstr ""
+
+#: view/dashboard.php:174 view/dashboard-oneclick.php:121
+msgid "Automated Behavior"
+msgstr ""
+
+#: view/modals/modal-html-status.php:48
+msgid "Automated page speed optimizations for fast site performance"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Automatic optimization for site speed and Core Web Vitals. Use 35+ features, "
+"including Caching, image optimization, critical CSS, and Cloudflare CDN."
+msgstr ""
+
+#: view/dashboard.php:299 view/dashboard-oneclick.php:201
+msgid "Automatically pre-caches your website's page content"
+msgstr ""
+
+#: view/modals/modal-cache-warmup.php:19
+msgid "Automatically re-optimizes purged/invalidated pages."
+msgstr ""
+
+#: classes/WordPress/Settings/OptimizationLevel.php:58
+msgid "Available on Starter"
+msgstr ""
+
+#: diagnostics.php:49
+msgid "Bad request."
+msgstr ""
+
+#: view/dashboard.php:277 view/dashboard-oneclick.php:179
+msgid "Basic Settings"
+msgstr ""
+
+#: classes/WordPress/Settings/Logger.php:57
+msgid ""
+"Best used during site maintenance or troubleshooting to get a clearer view "
+"of your site's activities."
+msgstr ""
+
+#: classes/WordPress/Settings/Logger.php:154
+msgid ""
+"Bulk log downloads aren't available because the PHP ext-zip isn't enabled. "
+"Contact your hosting provider or download files individually."
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:402
+msgid "Cache By Device Type is not activate"
+msgstr ""
+
+#: view/dashboard.php:288 view/dashboard-oneclick.php:190
+#: view/modals/modal-cache-warmup.php:18
+msgid "Cache warmup"
+msgstr ""
+
+#: classes/WordPress/Settings/CacheWarmup.php:26
+msgid "Cache warmup skipped."
+msgstr ""
+
+#: view/modals/modal-optimization-mode.php:20
+#: view/modals/modal-plugin-deactivate.php:28
+#: view/modals/modal-test-mode.php:24 view/modals/modal-test-mode.php:66
+#: view/modals/modal-cache-warmup.php:25 view/modals/modal-disconnect.php:19
+#: view/modals/modal-not-optimized-CPT.php:50
+msgid "Cancel"
+msgstr ""
+
+#: view/dashboard.php:381
+msgid "Cart cache"
+msgstr ""
+
+#: view/dashboard.php:258
+msgid "CDN bandwidth"
+msgstr ""
+
+#: view/modals/modal-optimization-mode.php:13
+msgid "Change optimization mode?"
+msgstr ""
+
+#: view/preview-site.php:37
+msgid ""
+"Click \"<b>Go live</b>\" to launch the faster version for all your visitors"
+msgstr ""
+
+#: view/modals/modal-modes.php:129 view/modals/modal-posttypes.php:53
+msgid "Close"
+msgstr ""
+
+#: view/modals/modal-optimization-mode.php:10 view/modals/modal-modes.php:70
+#: view/modals/modal-plugin-deactivate.php:14
+#: view/modals/modal-test-mode.php:14 view/modals/modal-cache-warmup.php:14
+#: view/modals/modal-unsaved-changes.php:10
+#: view/modals/modal-purge-cache.php:10 view/modals/modal-disconnect.php:10
+msgid "Close modal"
+msgstr ""
+
+#: view/modals/modal-modes.php:14 view/modals/modal-modes.php:20
+msgid "Combine CSS"
+msgstr ""
+
+#: view/modals/modal-modes.php:11
+msgid "Combine JavaScript"
+msgstr ""
+
+#: view/dashboard.php:326 view/dashboard-oneclick.php:250
+msgid ""
+"Compressing the structure of your HTML, ensures faster page rendering and an "
+"optimized browsing experience for your users."
+msgstr ""
+
+#: view/dashboard.php:612 view/dashboard-oneclick.php:462
+msgid ""
+"Compression is already enabled on your server! There is no need to enable it "
+"in NitroPack."
+msgstr ""
+
+#: diagnostics.php:144
+msgid "Config file constant is not defined."
+msgstr ""
+
+#: diagnostics.php:141
+msgid "Config file not found."
+msgstr ""
+
+#: diagnostics.php:138
+msgid "Config found, but unable to get contents."
+msgstr ""
+
+#: view/modals/modal-posttypes.php:8
+msgid "Configure post types"
+msgstr ""
+
+#: view/modals/modal-posttypes.php:9
+msgid "Configure post types that can be optimized"
+msgstr ""
+
+#: diagnostics.php:53
+msgid ""
+"Conflict. There is another operation, which prevents accepting optimization "
+"requests at the moment. Please, contact NP support for details."
+msgstr ""
+
+#: view/connect.php:67
+msgid "connect automatically"
+msgstr ""
+
+#: view/connect.php:61
+msgid "Connect NitroPack"
+msgstr ""
+
+#: view/connect.php:12
+msgid "Connect NitroPack to your WordPress site"
+msgstr ""
+
+#: view/connect-oneclick.php:6
+msgid "Connect to NitroPack account"
+msgstr ""
+
+#: view/connect-oneclick.php:28
+msgid "Connect to NitroPack OneClick"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:56
+msgid "Connect your website"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:55
+msgid "Connect your website to enable NitroPack's optimizations"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:369
+msgid "Connection problems detected"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:207
+msgid "Constant WP_CACHE cannot be set"
+msgstr ""
+
+#: view/modals/modal-html-status-error.php:31
+msgid "Contact Support"
+msgstr ""
+
+#: view/dashboard.php:619 view/dashboard-oneclick.php:469
+msgid ""
+"Could not determine compression status automatically. Please configure it "
+"manually."
+msgstr ""
+
+#: view/dashboard.php:121 view/dashboard-oneclick.php:68
+msgid "Custom"
+msgstr ""
+
+#: view/dashboard.php:49
+msgid "Customize NitroPack's Optimization Settings in Your Account"
+msgstr ""
+
+#: view/system-report.php:59
+msgid "Customize Report"
+msgstr ""
+
+#: classes/WordPress/Settings/Logger.php:68
+msgid "Date added"
+msgstr ""
+
+#: view/modals/modal-plugin-deactivate.php:18
+#: view/modals/modal-plugin-deactivate.php:30
+msgid "Deactivate"
+msgstr ""
+
+#: view/modals/modal-modes.php:32
+msgid "Delay loading of non-critical resources"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:106
+msgid "Delete now"
+msgstr ""
+
+#: classes/WordPress/Settings/Logger.php:58
+msgid "Detailed (Errors, Actions & Full Details)"
+msgstr ""
+
+#: view/modals/modal-safemode.php:12
+msgid "Did you know?"
+msgstr ""
+
+#: diagnostics.php:169
+msgid "Directory not found"
+msgstr ""
+
+#: view/modals/modal-disconnect.php:20
+msgid "Disconnect"
+msgstr ""
+
+#: view/dashboard.php:442
+msgid "Disconnect NitroPack plugin"
+msgstr ""
+
+#: view/modals/modal-disconnect.php:60
+msgid ""
+"Disconnecting NitroPack will delete your page optimizations, potentially "
+"slowing down your website and worsening the user experience."
+msgstr ""
+
+#: view/modals/modal-disconnect.php:48
+msgid ""
+"Disconnecting NitroPack will immediately stop page optimizations, "
+"potentially slowing down your site and affecting user experience."
+msgstr ""
+
+#: view/modals/modal-disconnect.php:91
+msgid "Disconnecting..."
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:115
+#: classes/WordPress/Settings/Components.php:142
+#: classes/WordPress/Settings/Components.php:144
+msgid "Dismiss"
+msgstr ""
+
+#: view/system-report.php:51
+msgid "Download"
+msgstr ""
+
+#: classes/WordPress/Settings/Logger.php:128
+msgid "Download all logs"
+msgstr ""
+
+#: classes/WordPress/Settings/Logger.php:129
+#, php-format
+msgid "Download usage for %1$s - %2$s"
+msgstr ""
+
+#: view/modals/modal-test-mode.php:26 view/modals/modal-test-mode.php:67
+#: view/modals/modal-cache-warmup.php:27
+msgid "Enable"
+msgstr ""
+
+#: view/dashboard.php:38
+msgid "Enable Cache Warmup"
+msgstr ""
+
+#: view/dashboard.php:32
+msgid "Enable proactive optimizations"
+msgstr ""
+
+#: view/modals/modal-test-mode.php:18 view/modals/modal-test-mode.php:62
+msgid "Enable Test Mode?"
+msgstr ""
+
+#: view/dashboard.php:575 view/dashboard-oneclick.php:430
+msgid "Error while fetching plan data"
+msgstr ""
+
+#: view/modals/modal-optimization-mode.php:60
+msgid "Error while fetching the optimization level settings"
+msgstr ""
+
+#: view/modals/modal-test-mode.php:131 view/modals/modal-disconnect.php:123
+msgid "Error!"
+msgstr ""
+
+#: classes/WordPress/Settings/TestMode.php:64
+msgid "Error! There was an SDK error while fetching status of safe mode!"
+msgstr ""
+
+#: diagnostics.php:80
+msgid "Error: "
+msgstr ""
+
+#: diagnostics.php:83 diagnostics.php:92 diagnostics.php:101
+#: diagnostics.php:102
+msgid "Error: Cannot get an SDK instance"
+msgstr ""
+
+#: view/dashboard.php:213 view/dashboard-oneclick.php:160
+msgid "Exclusions"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:217
+msgid "File .htaccess is not writable"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:138
+msgid "File advanced-cache.php cannot be created"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:151
+msgid "File advanced-cache.php re-installed"
+msgstr ""
+
+#: classes/WordPress/Settings/Logger.php:67
+msgid "File size"
+msgstr ""
+
+#: view/modals/modal-go-live.php:16
+msgid "Final check before going live"
+msgstr ""
+
+#: view/modals/modal-modes.php:56
+msgid "Font-display value"
+msgstr ""
+
+#: view/dashboard.php:235
+msgid "Free"
+msgstr ""
+
+#: view/modals/modal-modes.php:23
+msgid "Generate critical CSS"
+msgstr ""
+
+#: classes/WordPress/Settings/Logger.php:40
+msgid "Generate Log File"
+msgstr ""
+
+#: view/dashboard.php:368 view/dashboard-oneclick.php:292
+msgid "Give Editors the right to purge cache when content is updated."
+msgstr ""
+
+#: view/preview-site.php:122 view/modals/modal-go-live.php:36
+msgid "Go live"
+msgstr ""
+
+#: view/dashboard.php:72
+msgid "Go to app"
+msgstr ""
+
+#: view/modals/modal-not-optimized-CPT.php:47
+msgid ""
+"Going forward, new post types and taxonomies will be auto optimized and this "
+"message won't appear again."
+msgstr ""
+
+#: classes/WordPress/Settings/Logger.php:58
+msgid ""
+"Great when debugging issues with our support team. Avoid using it constantly "
+"as it is very detailed and may fill up quickly."
+msgstr ""
+
+#: view/connect.php:64
+msgid ""
+"Having trouble connecting? Explore our <a href=\"#\" class=\"btn-manual-"
+"connect\">manual connect</a> option, browse our <a href=\"https://support."
+"nitropack.io/en/collections/6175768-nitropack-for-wordpress-and-"
+"woocommerce\" target=\"_blank\">FAQ section</a>, or reach out to our <a "
+"href=\"https://support.nitropack.io/en/\" target=\"_blank\">support team</a>."
+msgstr ""
+
+#: view/connect.php:53
+msgid "here"
+msgstr ""
+
+#: view/dashboard.php:323 view/dashboard-oneclick.php:247
+msgid "HTML Compression"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://nitropack.io/"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://nitropack.io/platform/wordpress"
+msgstr ""
+
+#: view/modals/modal-test-mode.php:91 view/modals/modal-purge-cache.php:20
+msgid "I will do it later"
+msgstr ""
+
+#: view/modals/modal-test-mode.php:90
+msgid ""
+"If you have made changes to NitroPack configuration or your website while "
+"you were using test mode, we recommend you to purge your cache. In this way "
+"we will update NitroPack cache with your recent changes."
+msgstr ""
+
+#: view/preview-site.php:40
+msgid ""
+"If you'd like to try a different balance of settings, switch to another "
+"Optimization mode and repeat the preview process."
+msgstr ""
+
+#: view/modals/modal-modes.php:44
+msgid "iFrames lazy load"
+msgstr ""
+
+#: view/modals/modal-modes.php:47
+msgid "Image optimization"
+msgstr ""
+
+#: view/modals/modal-modes.php:50
+msgid "Image quality"
+msgstr ""
+
+#: view/modals/modal-modes.php:38
+msgid "Images lazy-loading"
+msgstr ""
+
+#: classes/WordPress/Settings/OptimizationLevel.php:45
+msgid "Implements moderate optimizations"
+msgstr ""
+
+#: view/system-report.php:12
+msgid "Include active plugins list"
+msgstr ""
+
+#: view/system-report.php:19
+msgid "Include conflicting plugins list"
+msgstr ""
+
+#: view/system-report.php:33
+msgid "Include directory status"
+msgstr ""
+
+#: view/system-report.php:5
+msgid "Include NitroPack info (version, methods, environment)"
+msgstr ""
+
+#: view/system-report.php:26
+msgid "Include plugin config"
+msgstr ""
+
+#: view/dashboard.php:145 view/dashboard-oneclick.php:92
+msgid ""
+"Includes smart resource loading on top of Medium optimizations. Balances "
+"speed boost with stability."
+msgstr ""
+
+#: classes/Integration/Plugin/AdvancedMathCaptcha.php:316
+msgid "Invalid request."
+msgstr ""
+
+#: view/modals/modal-safemode.php:16
+msgid ""
+"It is not necessary to deactivate NitroPack for troubleshooting. You can use "
+"our Test Mode insted. Do you still want to deactivate?"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:501
+#, php-format
+msgid "It looks like you are hosted on %s"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:403
+msgid ""
+"It seems Cache By Device Type is not activate with the Cloudflare APO. It is "
+"recommended that you enable it for a more optimized experience."
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:114
+msgid ""
+"It seems plugins have been activated, deactivated or updated. It is "
+"recommended that you purge the cache to reflect the latest changes."
+msgstr ""
+
+#: view/modals/modal-purge-cache.php:17
+msgid ""
+"It will take us a few minutes to re-optimize all your pages and start "
+"serving optimized content to your visitors."
+msgstr ""
+
+#: view/dashboard.php:426
+msgid ""
+"Keep accurate product availability on your WooCommerce site. Turn on this "
+"feature if you display stock quantities, and enjoy automatic cache clearance "
+"when stock decreases."
+msgstr ""
+
+#: view/dashboard.php:93 view/dashboard-oneclick.php:40
+msgid "Last cache purge"
+msgstr ""
+
+#: view/dashboard.php:302 view/dashboard.php:329
+#: view/dashboard-oneclick.php:204 view/dashboard-oneclick.php:226
+#: view/dashboard-oneclick.php:253 classes/WordPress/Settings/Logger.php:43
+#: classes/WordPress/Settings/TestMode.php:149
+msgid "Learn more"
+msgstr ""
+
+#: view/connect.php:51
+msgid "Learn where to find your site's API details"
+msgstr ""
+
+#: view/modals/modal-unsaved-changes.php:20
+msgid "Leave"
+msgstr ""
+
+#: classes/WordPress/Settings.php:262
+#: classes/WordPress/Settings/Shortcodes.php:136
+msgid ""
+"Load widgets, feeds, and any shortcode with AJAX to bypass the cache and "
+"always show the latest content."
+msgstr ""
+
+#: view/dashboard.php:313 view/dashboard-oneclick.php:215
+msgid "Loading cache warmup status"
+msgstr ""
+
+#: view/dashboard-oneclick.php:239 classes/WordPress/Settings/TestMode.php:162
+msgid "Loading test mode status"
+msgstr ""
+
+#: classes/WordPress/Settings/Logger.php:66
+msgid "Log Name"
+msgstr ""
+
+#: classes/WordPress/Settings/Logger.php:41
+msgid ""
+"Logs keep track of what is happening on your site—like when plugins are "
+"installed, posts are published, or something goes wrong. They're great for "
+"finding and fixing tricky problems, especially with our support's help. Logs "
+"are saved for up to 14 days."
+msgstr ""
+
+#: view/dashboard.php:121 view/dashboard-oneclick.php:68
+#: view/modals/modal-modes.php:2
+#: classes/WordPress/Settings/OptimizationLevel.php:52
+msgid "Ludicrous"
+msgstr ""
+
+#: view/dashboard.php:238
+msgid "Manage subscription"
+msgstr ""
+
+#: view/dashboard.php:121 view/dashboard-oneclick.php:68
+#: view/modals/modal-modes.php:2
+#: classes/WordPress/Settings/OptimizationLevel.php:44
+msgid "Medium"
+msgstr ""
+
+#: view/modals/modal-modes.php:17
+msgid "Merge screen and all media styles"
+msgstr ""
+
+#: view/modals/modal-modes.php:8
+msgid "Minify resources"
+msgstr ""
+
+#: classes/WordPress/Settings/Logger.php:56
+msgid "Minimal (Errors Only)"
+msgstr ""
+
+#: classes/WordPress/Settings/Logger.php:57
+msgid "Moderate (Errors & Actions)"
+msgstr ""
+
+#: view/modals/modal-modes.php:65
+msgid "Modes comparison"
+msgstr ""
+
+#: view/preview-site.php:128
+#, php-format
+msgid ""
+"Need help? <a href=\"%s\" target=\"_blank\">Visit our Help Center</a> or "
+"contact our <a href=\"%s\">Support team</a>."
+msgstr ""
+
+#: view/dashboard.php:94 view/dashboard-oneclick.php:41
+msgid "Never"
+msgstr ""
+
+#: view/dashboard.php:248
+msgid "Next billing"
+msgstr ""
+
+#: view/dashboard.php:244
+msgid "Next reset"
+msgstr ""
+
+#. Name of the plugin
+msgid "NitroPack"
+msgstr ""
+
+#: view/modals/modal-html-status.php:39
+msgid ""
+"NitroPack badge was added to your site's footer as part of the Free plan"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:226
+msgid "NitroPack data directory cannot be created"
+msgstr ""
+
+#: diagnostics.php:61
+msgid "NitroPack Diagnostic Agent"
+msgstr ""
+
+#: view/modals/modal-html-status.php:2
+msgid "NitroPack has been successfully set up"
+msgstr ""
+
+#. Author of the plugin
+msgid "NitroPack Inc."
+msgstr ""
+
+#: view/oneclick.php:7
+msgid "NitroPack OneClick™"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:239
+msgid "NitroPack plugin data directory cannot be created"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:259
+msgid "NitroPack static config file cannot be created"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:265
+#: classes/WordPress/Notifications/Notifications.php:350
+msgid "NitroPack static config file cannot be updated"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:393
+msgid "NitroPack upgraded to 1.3"
+msgstr ""
+
+#: view/dashboard.php:615 view/dashboard-oneclick.php:465
+msgid "No compression was detected! We will now enable it in NitroPack."
+msgstr ""
+
+#: classes/WordPress/Settings/Logger.php:112
+#: classes/WordPress/Settings/Logger.php:115
+msgid "No error logs yet."
+msgstr ""
+
+#: view/dashboard.php:245 view/dashboard.php:249
+msgid "No ETA"
+msgstr ""
+
+#: view/modals/modal-safemode.php:20
+msgid "No, enable “Test Mode”"
+msgstr ""
+
+#: diagnostics.php:182
+msgid "None detected"
+msgstr ""
+
+#: diagnostics.php:191
+msgid "Not found"
+msgstr ""
+
+#: diagnostics.php:32 diagnostics.php:47 diagnostics.php:48 diagnostics.php:103
+msgid "OK"
+msgstr ""
+
+#: diagnostics.php:94
+msgid "OK for drop-in"
+msgstr ""
+
+#: view/dashboard.php:110 view/dashboard-oneclick.php:57
+msgid "Optimization mode"
+msgstr ""
+
+#: view/preview-site.php:46
+msgid "Optimization modes"
+msgstr ""
+
+#: view/modals/modal-not-optimized-CPT.php:7
+msgid "Optimization Opportunity"
+msgstr ""
+
+#: view/modals/modal-not-optimized-CPT.php:51
+msgid "Optimize selected"
+msgstr ""
+
+#: view/modals/modal-html-status.php:43
+msgid "optimized by"
+msgstr ""
+
+#: view/dashboard.php:80 view/dashboard-oneclick.php:27
+msgid "Optimized pages"
+msgstr ""
+
+#: view/connect.php:66
+msgid "Or"
+msgstr ""
+
+#: view/modals/modal-modes.php:53
+msgid "Override font rendering behavior"
+msgstr ""
+
+#: view/dashboard.php:196 view/dashboard-oneclick.php:143
+msgid "Page optimization"
+msgstr ""
+
+#: view/dashboard.php:252
+msgid "Page views"
+msgstr ""
+
+#: view/dashboard.php:86 view/dashboard-oneclick.php:33
+msgid "page(s) in the background"
+msgstr ""
+
+#: diagnostics.php:50
+msgid "Payment required. Please, contact NP support for details."
+msgstr ""
+
+#: classes/WordPress/Settings/Logger.php:56
+msgid ""
+"Perfect for live websites where you can quickly spot and address serious "
+"issues without unnecessary noise."
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:500
+msgid ""
+"Please follow the instructions in order to make sure that everything works "
+"correctly."
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:201
+msgid "Please go to your FlyWheel control panel and enable this setting."
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:386
+msgid "Please make sure that it is writable and refresh this page."
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:164
+#: classes/WordPress/Notifications/Notifications.php:227
+#: classes/WordPress/Notifications/Notifications.php:240
+msgid ""
+"Please make sure that the /wp-content/ directory is writable and refresh "
+"this page."
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:260
+#: classes/WordPress/Notifications/Notifications.php:266
+#: classes/WordPress/Notifications/Notifications.php:351
+msgid ""
+"Please make sure that the /wp-content/config-nitropack/ directory is "
+"writable and refresh this page."
+msgstr ""
+
+#: view/system-report.php:125
+msgid "Please select at least one of the report options"
+msgstr ""
+
+#: view/modals/modal-html-status-error.php:24
+msgid "Please try again. If the issue persists, contact our Support team."
+msgstr ""
+
+#: view/modals/modal-disconnect.php:61
+msgid ""
+"Please use \"Test Mode\" for troubleshooting potential issues without "
+"negatively impacting your site’s performance."
+msgstr ""
+
+#: view/connect-oneclick.php:5
+msgid "Plugin activation"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:113
+msgid "Plugins activity"
+msgstr ""
+
+#: view/preview-site.php:112 view/modals/modal-go-live.php:26
+msgid "Preview Home Page"
+msgstr ""
+
+#: view/preview-site.php:31
+msgid "Preview your site and go live"
+msgstr ""
+
+#: view/dashboard.php:84 view/dashboard-oneclick.php:31
+msgid "Processing"
+msgstr ""
+
+#: view/dashboard.php:182 view/dashboard-oneclick.php:129
+msgid "Purge affected cache when content is updated or published"
+msgstr ""
+
+#: view/dashboard.php:100 view/dashboard.php:181 view/dashboard-oneclick.php:47
+#: view/dashboard-oneclick.php:128
+msgid "Purge cache"
+msgstr ""
+
+#: view/modals/modal-test-mode.php:89
+msgid "Purge cache after disabling Test Mode?"
+msgstr ""
+
+#: view/modals/modal-test-mode.php:92 view/modals/modal-purge-cache.php:21
+msgid "Purge cache now"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:502
+msgid "Read Instructions"
+msgstr ""
+
+#: view/dashboard.php:424
+msgid "Real-time Stock Refresh"
+msgstr ""
+
+#: view/dashboard.php:95 view/dashboard-oneclick.php:42
+msgid "Reason"
+msgstr ""
+
+#: view/dashboard.php:289 view/dashboard-oneclick.php:191
+#: classes/WordPress/Settings/OptimizationLevel.php:58
+msgid "Recommended"
+msgstr ""
+
+#: view/modals/modal-modes.php:26
+msgid "Remove render-blocking resources"
+msgstr ""
+
+#: view/system-report.php:171
+msgid "Report generated successfully."
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:104
+msgid "Residual cache files"
+msgstr ""
+
+#: view/modals/modal-modes.php:35
+msgid "Resource loading strategy"
+msgstr ""
+
+#: view/system-report.php:173
+msgid "Response is empty. Report generation failed."
+msgstr ""
+
+#: view/dashboard.php:339 view/dashboard-oneclick.php:263
+msgid "Run compression test"
+msgstr ""
+
+#: diagnostics.php:54
+msgid "Runtime error."
+msgstr ""
+
+#: classes/WordPress/Settings.php:283 view/modals/modal-unsaved-changes.php:21
+#: classes/WordPress/Settings/Shortcodes.php:150
+msgid "Save"
+msgstr ""
+
+#: view/modals/modal-posttypes.php:54
+msgid "Save Changes"
+msgstr ""
+
+#: classes/Feature/AjaxShortcodes.php:165
+#: classes/Feature/AjaxShortcodes.php:169
+msgid "Security check"
+msgstr ""
+
+#: view/dashboard.php:164 view/dashboard-oneclick.php:111
+#: view/preview-site.php:48
+msgid "See modes comparison"
+msgstr ""
+
+#: view/dashboard.php:115 view/dashboard-oneclick.php:62
+msgid ""
+"Select from our range of predefined optimization modes to boost your site's "
+"performance."
+msgstr ""
+
+#: classes/WordPress/Settings/Logger.php:52
+msgid "Select log level"
+msgstr ""
+
+#: view/preview-site.php:100
+msgid "Select Mode"
+msgstr ""
+
+#: view/modals/modal-html-status.php:34
+msgid "Select optimization mode"
+msgstr ""
+
+#: view/dashboard.php:197 view/dashboard-oneclick.php:144
+msgid "Select what post/page types get optimized"
+msgstr ""
+
+#: diagnostics.php:55
+msgid "Service unavailable."
+msgstr ""
+
+#: view/modals/modal-setting-html.php:2
+msgid "Setting up NitroPack"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:522
+msgid "Settings"
+msgstr ""
+
+#: classes/WordPress/Settings.php:261
+#: classes/WordPress/Settings/Shortcodes.php:135
+msgid "Shortcodes exclusions"
+msgstr ""
+
+#: diagnostics.php:37
+msgid "Site config cannot be found, because "
+msgstr ""
+
+#: diagnostics.php:51
+msgid "Site disabled. Please, contact NP support for details."
+msgstr ""
+
+#: view/connect.php:42
+msgid ""
+"Site secret is a confidential alphanumeric key associated with your website, "
+"designed to ensure secure communication between NitroPack and your site."
+msgstr ""
+
+#: view/modals/modal-modes.php:41
+msgid "Size images preemtively"
+msgstr ""
+
+#: view/dashboard.php:40
+msgid "Skip"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:93
+msgid ""
+"Some of its features overlap with NitroPack's optimizations which could lead "
+"to issues. We recommend disabling it to avoid potential conflicts."
+msgstr ""
+
+#: view/modals/modal-not-optimized-CPT.php:8
+msgid ""
+"Some of your existing post types and taxonomies are not optimized which "
+"might slow down your site. To improve performance, please review the list "
+"below and select the ones you want to optimize."
+msgstr ""
+
+#: view/dashboard.php:121 view/dashboard-oneclick.php:68
+#: view/modals/modal-modes.php:2
+#: classes/WordPress/Settings/OptimizationLevel.php:40
+msgid "Standard"
+msgstr ""
+
+#: view/dashboard.php:135 view/dashboard-oneclick.php:82
+msgid ""
+"Standard optimization features enabled for your site. Ideal choice for "
+"maximum stability."
+msgstr ""
+
+#: view/dashboard.php:29 view/preview-site.php:28
+msgid "Step"
+msgstr ""
+
+#: view/connect.php:9
+msgid "Step 1/3"
+msgstr ""
+
+#: classes/WordPress/Settings/OptimizationLevel.php:49
+msgid "Strikes a great balance between stability and website speed"
+msgstr ""
+
+#: view/dashboard.php:121 view/dashboard-oneclick.php:68
+#: view/modals/modal-modes.php:2
+#: classes/WordPress/Settings/OptimizationLevel.php:48
+msgid "Strong"
+msgstr ""
+
+#: view/dashboard.php:231
+msgid "Subscription"
+msgstr ""
+
+#: view/modals/modal-optimization-mode.php:21
+msgid "Switch mode"
+msgstr ""
+
+#: view/modals/modal-disconnect.php:106
+msgid "Switching to Test Mode..."
+msgstr ""
+
+#: view/dashboard.php:350 view/dashboard-oneclick.php:274
+msgid "Sync NitroPack Purge with Beaver Builder"
+msgstr ""
+
+#: view/system-report.php:47
+msgid "System Info Report"
+msgstr ""
+
+#: view/dashboard-oneclick.php:221 classes/WordPress/Settings/TestMode.php:146
+msgid "Test Mode"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:128
+msgid "Test Mode Enabled"
+msgstr ""
+
+#: view/dashboard-oneclick.php:223 classes/WordPress/Settings/TestMode.php:147
+msgid "Test NitroPack's features without affecting your visitors' experience"
+msgstr ""
+
+#: view/dashboard.php:599 view/dashboard-oneclick.php:449
+msgid "Testing current compression status"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:385
+msgid "The .htaccess file cannot be modified"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:176
+msgid ""
+"The file /wp-content/advanced-cache.php cannot be created because a "
+"conflicting plugin is active. Please make sure to disable all conflicting "
+"plugins."
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:183
+msgid ""
+"The file /wp-content/advanced-cache.php cannot be created. Please make sure "
+"that the /wp-content/ directory is writable and refresh this page."
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:152
+msgid ""
+"The file /wp-content/advanced-cache.php was either missing or not the one "
+"generated by NitroPack. NitroPack re-installed its version of the file, so "
+"it can function properly. Possibly, there is another active page caching "
+"plugin in your system. For correct operation, please deactivate any other "
+"page caching plugins."
+msgstr ""
+
+#: classes/WordPress/Settings/OptimizationLevel.php:53
+msgid ""
+"The most powerful optimization setting, aiming for best possible performance"
+msgstr ""
+
+#: view/modals/modal-setting-html.php:32
+msgid "The setup may take up to 1 minute ..."
+msgstr ""
+
+#: view/system-report.php:177
+msgid "There was an error while generating the report."
+msgstr ""
+
+#: view/modals/modal-optimization-mode.php:17
+msgid ""
+"This action will change some of your current settings with the predefined of "
+"the selected mode."
+msgstr ""
+
+#: view/modals/modal-test-mode.php:65
+msgid ""
+"This allows you to assess and fine-tune NitroPack’s performance before "
+"implementing optimizations site-wide."
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:286
+msgid ""
+"This can impact the stability of the plugin. Please disconnect and connect "
+"again in order to retry configuring the webhooks."
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:208
+msgid ""
+"This can lead to slower cache delivery. Please make sure that the /wp-config."
+"php file is writable and refresh this page."
+msgstr ""
+
+#: view/dashboard.php:414
+msgid "This feature is available on Plus plan and above."
+msgstr ""
+
+#: view/modals/modal-go-live.php:21
+msgid ""
+"This is your last chance to preview how the <span class=\"active-mode\">"
+"Ludicrous</span> Mode looks on your site. A quick check ensures that "
+"NitroPack's optimizations work perfectly for all your visitors."
+msgstr ""
+
+#: view/system-report.php:48
+msgid ""
+"This report gives a clear picture of how NitroPack is set up on your site. "
+"It checks for anything that might cause problems, like plugins that don’t "
+"work well with NitroPack or server issues. If something isn’t working as "
+"expected, share this report with support to help them fix it quickly."
+msgstr ""
+
+#: view/modals/modal-plugin-deactivate.php:22
+msgid ""
+"This will turn it off to help avoid conflicts with NitroPack. You can turn "
+"it back on anytime from the Plugins page."
+msgstr ""
+
+#: view/modals/modal-test-mode.php:64
+msgid ""
+"To view how a NitroPack optimised page will load and behave simply append <b>"
+"?testnitro=1</b> to any URL (e.g. https://yourwebsite.com/?testnitro=1)"
+msgstr ""
+
+#: view/modals/modal-html-status-error.php:29
+msgid "Try again"
+msgstr ""
+
+#: view/dashboard.php:34
+msgid ""
+"Turn on Cache Warmup so NitroPack can start optimizing your pages "
+"immediately, without waiting for traffic. This guarantees a fast site for "
+"every visitor right from the start."
+msgstr ""
+
+#: diagnostics.php:94
+msgid "Turned off"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:218
+msgid ""
+"Unable to configure LiteSpeed specific rules for maximum performance. Please "
+"make sure your .htaccess file is writable or contact support."
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:285
+msgid "Unable to configure webhooks"
+msgstr ""
+
+#: diagnostics.php:90 diagnostics.php:93 diagnostics.php:94 diagnostics.php:95
+#: diagnostics.php:96 diagnostics.php:98 diagnostics.php:99 diagnostics.php:100
+#: diagnostics.php:155
+msgid "Undefined"
+msgstr ""
+
+#: view/dashboard.php:96 view/dashboard-oneclick.php:43
+msgid "Unknown"
+msgstr ""
+
+#: diagnostics.php:56
+msgid "Unknown."
+msgstr ""
+
+#: view/dashboard.php:416
+msgid "Upgrade here"
+msgstr ""
+
+#: view/preview-site.php:97
+msgid "Upgrade plan"
+msgstr ""
+
+#: diagnostics.php:52
+msgid "URL used for the API poll request returned 404. Please ignore this."
+msgstr ""
+
+#: view/modals/modal-modes.php:29
+msgid "Use resource loader script"
+msgstr ""
+
+#: view/connect-oneclick.php:31
+msgid ""
+"Visit your hosting provider page to connect NitroPack with your WordPress "
+"site."
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:122
+msgid ""
+"Visitors are accessing your unoptimized pages. Make sure to disable it once "
+"you are done testing."
+msgstr ""
+
+#: diagnostics.php:103
+msgid "Warning: \"stream_socket_client\" function is disabled."
+msgstr ""
+
+#: diagnostics.php:32
+msgid "Warning: Webhooks do not match this site"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:105
+#, php-format
+msgid ""
+"We found residual cache files from %s. These files can interfere with the "
+"caching process and must be deleted."
+msgstr ""
+
+#: view/modals/modal-html-status-error.php:19
+msgid "We weren't able to set up your site"
+msgstr ""
+
+#: view/preview-site.php:32
+#, php-format
+msgid ""
+"We've activated <span class=\"active-mode\">%s</span> mode on your home page "
+"in a safe testing environment, so changes are visible only to you. Take a "
+"moment to:"
+msgstr ""
+
+#: view/connect-oneclick.php:18
+msgid "Welcome to NitroPack OneClick for WordPress"
+msgstr ""
+
+#: view/dashboard.php:353 view/dashboard-oneclick.php:277
+msgid ""
+"When Beaver Builder cache is purged, NitroPack will perform a full cache "
+"purge keeping your site's content up-to-date."
+msgstr ""
+
+#: view/modals/modal-test-mode.php:63
+msgid ""
+"When you enable Test Mode, we disable all NitroPack’s optimizations and your "
+"site visitors are accessing your regular, unoptimized URLs."
+msgstr ""
+
+#: view/dashboard.php:162 view/dashboard-oneclick.php:109
+msgid "Which optimization mode to choose?"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:521
+msgid "WooCommerce detected"
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:200
+msgid "WP_CACHE not enabled"
+msgstr ""
+
+#: view/modals/modal-safemode.php:19
+msgid "Yes, deactivate"
+msgstr ""
+
+#: view/dashboard.php:56
+msgid ""
+"You can further configure how NitroPack's optimization behaves through your "
+"account."
+msgstr ""
+
+#: view/modals/modal-unsaved-changes.php:13
+msgid "You have unsaved changes."
+msgstr ""
+
+#: view/dashboard.php:269
+msgid ""
+"You will be notified by email when your website reaches the subscription "
+"resource limits."
+msgstr ""
+
+#: view/connect.php:13
+msgid "You're just one click away from connecting NitroPack to your site."
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:519
+msgid ""
+"Your <strong>account</strong>, <strong>cart</strong>, and <strong>"
+"checkout</strong> pages are automatically excluded from optimization."
+msgstr ""
+
+#: view/connect-oneclick.php:19
+msgid "Your license is managed by your hosting provider."
+msgstr ""
+
+#: classes/WordPress/Notifications/Notifications.php:394
+msgid ""
+"Your new version of NitroPack has a new better way of recaching updated "
+"content. However, it is incompatible with the page relationships built by "
+"your previous version. Please invalidate your cache manually one-time so "
+"that content updates start working with the updated logic."
+msgstr ""
+
+#: view/connect-oneclick.php:41
+msgid ""
+"Your setup is complete – you're all set to experience a seamless journey "
+"ahead."
+msgstr ""
+
+#: view/modals/modal-html-status.php:28
+msgid "Your setup is complete. Let's preview your site and go live."
+msgstr ""
+
+#: view/dashboard.php:383
+msgid ""
+"Your visitors will enjoy full site speed while browsing with items in cart. "
+"Fully optimized page cache will be served."
+msgstr ""

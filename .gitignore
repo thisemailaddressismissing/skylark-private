@@ -1,0 +1,32 @@
+# OS
+Thumbs.db
+.DS_Store
+
+# Archives - do not commit site zips
+*.zip
+*.tar.gz
+*.sql
+*.sql.gz
+
+# WordPress - secrets & local/env
+wp-config.php
+wp-config-local.php
+.env
+.htaccess
+
+# Logs
+error_log
+debug.log
+*.log
+wp-admin/error_log
+
+# Uploads & dynamic content
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backups/
+wp-content/backup*/
+wp-content/ai1wm-backups/
+
+# Laragon / local
+cgi-bin/

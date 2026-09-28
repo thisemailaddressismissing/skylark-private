@@ -1,0 +1,39 @@
+{
+    "skylarkapparelltd.com": {
+        "siteId": "dNpxPlNFTayRfmEZwRLajsfoGPUORXFX",
+        "siteSecret": "R9Uzs8GSwVBM29WmwuXVqhVoFRg5BqHEbHvT5o5xoGtI88bKoxHPNbhVRrXbFdyq",
+        "blogId": 1,
+        "compression": false,
+        "webhookToken": "e994577b1095e79cd354df6104146f9a",
+        "home_url": "https:\/\/skylarkapparelltd.com",
+        "admin_url": "https:\/\/skylarkapparelltd.com\/wp-admin\/",
+        "hosting": "unknown",
+        "alwaysBuffer": true,
+        "isEzoicActive": false,
+        "isApoActive": false,
+        "isNginxHelperActive": false,
+        "isLateIntegrationInitRequired": false,
+        "isDlmActive": false,
+        "isWoocommerceCacheHandlerActive": false,
+        "isWoocommerceActive": false,
+        "isAeliaCurrencySwitcherActive": false,
+        "isGeoTargetingWPActive": false,
+        "dlm_downloading_url": null,
+        "dlm_download_endpoint": null,
+        "pluginVersion": "1.19.4",
+        "options_cache": {
+            "cache_handler_cache_handler": false,
+            "woocommerce_default_customer_address": "base",
+            "ajaxShortcodes": {
+                "enabled": false,
+                "shortcodes": []
+            },
+            "wc_aelia_currency_switcher": {
+                "ipgeolocation_enabled": null
+            }
+        },
+        "additional_domains": [],
+        "minimumLogLevel": null
+    },
+    "config_path": "1c9e38771cb0a46f3145a25d0b11e11e"
+}
