@@ -147,3 +147,48 @@ function handle_custom_contact_form() {
         'message' => 'Thank you! Your message has been sent successfully. We will get back to you shortly.' 
     ) );
 }
+
+// -------------------------------------------------------------
+// 4. OPEN GRAPH & SOCIAL SHARE PREVIEW FOR HOMEPAGE
+// -------------------------------------------------------------
+add_filter( 'wpseo_opengraph_title', 'skylark_custom_og_title', 99 );
+add_filter( 'wpseo_twitter_title', 'skylark_custom_og_title', 99 );
+function skylark_custom_og_title( $title ) {
+    if ( is_front_page() || is_home() ) {
+        return 'Skylark Apparel Limited';
+    }
+    return $title;
+}
+
+add_filter( 'wpseo_opengraph_site_name', function( $name ) {
+    return 'Skylark Apparel Limited';
+}, 99 );
+
+add_filter( 'wpseo_opengraph_image', 'skylark_custom_og_image', 99 );
+add_filter( 'wpseo_twitter_image', 'skylark_custom_og_image', 99 );
+function skylark_custom_og_image( $img ) {
+    if ( is_front_page() || is_home() ) {
+        return home_url( '/wp-content/uploads/2026/05/skylark-social-share.png' );
+    }
+    return $img;
+}
+
+add_filter( 'wpseo_twitter_card_type', function( $type ) {
+    if ( is_front_page() || is_home() ) {
+        return 'summary_large_image';
+    }
+    return $type;
+}, 99 );
+
+add_action( 'wp_head', 'skylark_fallback_social_meta', 1 );
+function skylark_fallback_social_meta() {
+    if ( ( is_front_page() || is_home() ) && ! defined( 'WPSEO_VERSION' ) ) {
+        $img_url = home_url( '/wp-content/uploads/2026/05/skylark-social-share.png' );
+        echo '<meta property="og:title" content="Skylark Apparel Limited" />' . "\n";
+        echo '<meta property="og:site_name" content="Skylark Apparel Limited" />' . "\n";
+        echo '<meta property="og:image" content="' . esc_url( $img_url ) . '" />' . "\n";
+        echo '<meta name="twitter:card" content="summary_large_image" />' . "\n";
+        echo '<meta name="twitter:title" content="Skylark Apparel Limited" />' . "\n";
+        echo '<meta name="twitter:image" content="' . esc_url( $img_url ) . '" />' . "\n";
+    }
+}
