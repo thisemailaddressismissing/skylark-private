@@ -23,7 +23,7 @@ get_header(); ?>
                             <rect x="2" y="4" width="20" height="16" rx="2"></rect>
                             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                         </svg>
-                        harun_skylark@hotmail.com
+                        contact@skylarkapparelltd.com
                     </a>
                 </div>
 
@@ -32,22 +32,25 @@ get_header(); ?>
                     <input type="hidden" name="action" value="submit_contact_form">
                     <input type="hidden" name="role" id="selected-role" value="Buyer">
 
-                    <!-- Question: What describes you best? -->
+                    <!-- Question: What describes you best? (Sliding Glider Tabs) -->
                     <div class="contact-role-section">
                         <div class="contact-role-label">What describes you best?</div>
-                        <div class="role-tabs">
-                            <button type="button" class="role-tab-btn active" data-role="Buyer" data-desc="Looking to source from us">
-                                Buyer
-                            </button>
-                            <button type="button" class="role-tab-btn" data-role="Supplier" data-desc="Interested in providing materials or equipment">
-                                Supplier
-                            </button>
-                            <button type="button" class="role-tab-btn" data-role="Partner" data-desc="Looking to explore long-term business partnerships">
-                                Partner
-                            </button>
-                            <button type="button" class="role-tab-btn" data-role="Someone else" data-desc="General inquiries or questions">
-                                Someone else
-                            </button>
+                        <div class="role-glider-tabs-container">
+                            <div class="role-glider-tabs">
+                                <input type="radio" id="role-buyer" name="role_tab" value="Buyer" data-desc="Looking to source from us" checked />
+                                <label class="role-tab" for="role-buyer">Buyer</label>
+
+                                <input type="radio" id="role-supplier" name="role_tab" value="Supplier" data-desc="Interested in providing materials or equipment" />
+                                <label class="role-tab" for="role-supplier">Supplier</label>
+
+                                <input type="radio" id="role-partner" name="role_tab" value="Partner" data-desc="Looking to explore long-term business partnerships" />
+                                <label class="role-tab" for="role-partner">Partner</label>
+
+                                <input type="radio" id="role-other" name="role_tab" value="Someone else" data-desc="General inquiries or questions" />
+                                <label class="role-tab" for="role-other">Someone else</label>
+
+                                <span class="glider"></span>
+                            </div>
                         </div>
                         <div class="role-subtext" id="role-description">Looking to source from us</div>
                     </div>
@@ -108,13 +111,43 @@ get_header(); ?>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('.role-tab-btn');
+    const roleRadios = document.querySelectorAll('input[name="role_tab"]');
     const roleInput = document.getElementById('selected-role');
     const roleDesc = document.getElementById('role-description');
+    const glider = document.querySelector('.role-glider-tabs .glider');
     const form = document.getElementById('skylark-contact-form');
     const submitBtn = document.getElementById('submit-btn');
     const feedback = document.getElementById('contact-feedback');
     const phoneInput = document.querySelector("#phone");
+
+    // Dynamic Glider Sizing & Positioning to completely cover every word
+    function updateGlider() {
+        const checked = document.querySelector('input[name="role_tab"]:checked');
+        if (!checked || !glider) return;
+        const label = document.querySelector(`label[for="${checked.id}"]`);
+        if (!label) return;
+
+        glider.style.width = label.offsetWidth + 'px';
+        glider.style.height = label.offsetHeight + 'px';
+        glider.style.top = label.offsetTop + 'px';
+        glider.style.transform = `translateX(${label.offsetLeft}px)`;
+    }
+
+    // Role Glider Tab selection
+    roleRadios.forEach(radio => {
+        radio.addEventListener('change', function() {
+            if (this.checked) {
+                roleInput.value = this.value;
+                roleDesc.textContent = this.getAttribute('data-desc');
+                updateGlider();
+            }
+        });
+    });
+
+    // Initialize glider on load & window resize / device orientation change
+    setTimeout(updateGlider, 50);
+    window.addEventListener('resize', updateGlider);
+    window.addEventListener('orientationchange', () => setTimeout(updateGlider, 100));
 
     // Initialize International Telephone Input with Country Code Selector
     let iti = null;
@@ -127,16 +160,6 @@ document.addEventListener('DOMContentLoaded', function() {
             utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.6/build/js/utils.js"
         });
     }
-
-    // Role Tab selection
-    buttons.forEach(button => {
-        button.addEventListener('click', function() {
-            buttons.forEach(b => b.classList.remove('active'));
-            this.classList.add('active');
-            roleInput.value = this.getAttribute('data-role');
-            roleDesc.textContent = this.getAttribute('data-desc');
-        });
-    });
 
     // GSAP Paper Plane Animation
     function runPlaneAnimation(button, callback) {
@@ -287,7 +310,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (iti) {
                         iti.setCountry("bd");
                     }
-                    buttons[0].click();
+                    const defaultRadio = document.getElementById('role-buyer');
+                    if (defaultRadio) {
+                        defaultRadio.checked = true;
+                        roleInput.value = defaultRadio.value;
+                        roleDesc.textContent = defaultRadio.getAttribute('data-desc');
+                        updateGlider();
+                    }
                 }, 1000);
             } else {
                 feedback.className = 'contact-feedback-msg error';

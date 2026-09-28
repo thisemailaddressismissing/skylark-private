@@ -4,7 +4,7 @@
  Description:  Astra Child Theme for Skylark Apparel
  Author:       Skylark
  Template:     astra
- Version:      1.0.7
+ Version:      1.0.9
  Text Domain:  astra-child
 */
 
@@ -52,7 +52,7 @@
     max-width: 800px;
     margin: 0 auto;
     background: #ffffff;
-    border-radius: 12px;
+    border-radius: 16px;
     padding: 48px;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
     box-sizing: border-box;
@@ -91,48 +91,87 @@
     font-size: 15px;
     font-weight: 600;
     color: #1f2937;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
-.skylark-page-contact-wrapper .role-tabs {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
+/* ========================================================
+   SLIDING PILL / GLIDER TABS (ADAPTIVE WIDTH)
+   ======================================================== */
+.skylark-page-contact-wrapper .role-glider-tabs-container {
+    width: 100%;
     margin-bottom: 10px;
 }
 
-.skylark-page-contact-wrapper .role-tab-btn {
-    border: 1px solid #e5e7eb;
-    background: #ffffff;
-    color: #4b5563;
-    padding: 14px 16px;
+.skylark-page-contact-wrapper .role-glider-tabs {
+    display: flex;
+    position: relative;
+    background-color: #edf2f9;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.06);
+    padding: 6px;
+    border-radius: 9999px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.skylark-page-contact-wrapper .role-glider-tabs * {
+    z-index: 2;
+}
+
+.skylark-page-contact-wrapper .role-glider-tabs input[type="radio"] {
+    display: none;
+}
+
+.skylark-page-contact-wrapper .role-glider-tabs .role-tab {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
     font-size: 15px;
-    font-weight: 500;
-    border-radius: 8px;
+    font-weight: 600;
+    border-radius: 9999px;
     cursor: pointer;
+    color: #55627a;
+    transition: color 0.2s ease-in-out;
+    user-select: none;
     text-align: center;
-    transition: all 0.2s ease;
+    padding: 0 12px;
+    white-space: nowrap;
+    position: relative;
+    z-index: 2;
+    margin: 0;
 }
 
-.skylark-page-contact-wrapper .role-tab-btn:hover {
-    background: #f9fafb;
-    border-color: #d1d5db;
+.skylark-page-contact-wrapper .role-glider-tabs input[type="radio"]:checked + .role-tab {
+    color: #0b45b0;
 }
 
-.skylark-page-contact-wrapper .role-tab-btn.active {
-    background: #0b45b0;
-    border-color: #0b45b0;
-    color: #ffffff;
-    box-shadow: 0 4px 12px rgba(11, 69, 176, 0.25);
+/* Adaptive Glider that dynamically matches active label dimensions */
+.skylark-page-contact-wrapper .role-glider-tabs .glider {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    display: block;
+    height: 46px;
+    width: 25%;
+    background-color: #ffffff;
+    box-shadow: 0 3px 8px rgba(11, 69, 176, 0.12), 0 1px 2px rgba(0, 0, 0, 0.04);
+    z-index: 1;
+    border-radius: 9999px;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), width 0.25s cubic-bezier(0.4, 0, 0.2, 1), height 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
 }
 
 .skylark-page-contact-wrapper .role-subtext {
     font-size: 13px;
     color: #6b7280;
     min-height: 20px;
-    margin-top: 6px;
+    margin-top: 8px;
+    padding-left: 6px;
 }
 
+/* Form Fields */
 .skylark-page-contact-wrapper .contact-form-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -404,12 +443,18 @@
     line-height: 1.5;
 }
 
-@media (max-width: 768px) {
+/* Responsive adjustments */
+@media (max-width: 640px) {
     .skylark-page-contact-wrapper .custom-contact-container {
-        padding: 24px 18px;
+        padding: 24px 16px;
     }
-    .skylark-page-contact-wrapper .role-tabs {
-        grid-template-columns: repeat(2, 1fr);
+    .skylark-page-contact-wrapper .role-glider-tabs {
+        padding: 4px;
+    }
+    .skylark-page-contact-wrapper .role-glider-tabs .role-tab {
+        font-size: 13px;
+        padding: 0 6px;
+        height: 42px;
     }
     .skylark-page-contact-wrapper .contact-form-grid {
         grid-template-columns: 1fr;
@@ -422,5 +467,13 @@
     }
     .skylark-page-contact-wrapper .contact-additional-sections {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 420px) {
+    .skylark-page-contact-wrapper .role-glider-tabs .role-tab {
+        font-size: 11.5px;
+        padding: 0 3px;
+        letter-spacing: -0.2px;
     }
 }
