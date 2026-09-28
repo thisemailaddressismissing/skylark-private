@@ -34,7 +34,7 @@ get_header(); ?>
 
                     <!-- Question: What describes you best? (Sliding Glider Tabs) -->
                     <div class="contact-role-section">
-                        <div class="contact-role-label">What describes you best?</div>
+                        <div class="contact-role-label">Which option best represents you?</div>
                         <div class="role-glider-tabs-container">
                             <div class="role-glider-tabs">
                                 <input type="radio" id="role-buyer" name="role_tab" value="Buyer" data-desc="Looking to source from us" checked />
