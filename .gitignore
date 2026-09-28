@@ -21,7 +21,8 @@ debug.log
 wp-admin/error_log
 
 # Uploads & dynamic content
-wp-content/uploads/
+# Exclude single video exceeding GitHub's 100MB limit (103.9 MB)
+wp-content/uploads/2026/05/IMG_5184.mp4
 wp-content/cache/
 wp-content/upgrade/
 wp-content/backups/
