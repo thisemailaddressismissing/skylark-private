@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Astra Child Theme functions and definitions
  */
