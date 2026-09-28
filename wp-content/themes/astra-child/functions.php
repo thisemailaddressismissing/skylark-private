@@ -121,7 +121,8 @@ function handle_custom_contact_form() {
     // 2. Email Recipients list (Easily edit this array anytime)
     $recipients = array(
         'contact@skylarkapparelltd.com',
-        'rkrakib2004@gmail.com'
+        'rkrakib2004@gmail.com',
+        'raia012n@gmail.com'
     );
 
     $subject = sprintf( '[Skylark Inquiry] %s - %s', $role, $full_name );
