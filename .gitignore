@@ -28,6 +28,7 @@ wp-content/upgrade/
 wp-content/backups/
 wp-content/backup*/
 wp-content/ai1wm-backups/
+wp-content/uploads/elementor/
 
 # Laragon / local
 cgi-bin/
