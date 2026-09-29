@@ -192,3 +192,80 @@ function skylark_fallback_social_meta() {
         echo '<meta name="twitter:image" content="' . esc_url( $img_url ) . '" />' . "\n";
     }
 }
+
+// -------------------------------------------------------------
+// 5. WEBP TRANSPARENT DELIVERY (PHP-based, .htaccess-safe)
+// -------------------------------------------------------------
+// Rewrites image URLs in HTML output to .webp when the browser
+// supports WebP and a .webp file exists on disk. Runs in PHP so
+// it survives .htaccess overwrites by WordPress/plugins.
+// -------------------------------------------------------------
+
+function skylark_browser_supports_webp() {
+    return isset( $_SERVER['HTTP_ACCEPT'] ) && strpos( $_SERVER['HTTP_ACCEPT'], 'image/webp' ) !== false;
+}
+
+add_action( 'template_redirect', 'skylark_webp_start_buffer' );
+function skylark_webp_start_buffer() {
+    if ( ! skylark_browser_supports_webp() ) {
+        return;
+    }
+    if ( is_admin() || wp_doing_ajax() || wp_doing_cron() || is_feed() || is_robots() ) {
+        return;
+    }
+    ob_start( 'skylark_webp_rewrite_html' );
+}
+
+function skylark_webp_rewrite_html( $html ) {
+    if ( empty( $html ) ) {
+        return $html;
+    }
+
+    $upload_dir  = wp_get_upload_dir();
+    $upload_path = $upload_dir['basedir'];
+    $upload_url  = $upload_dir['baseurl'];
+
+    // --- Pass 1: Rewrite normal URLs (src, srcset, url(), etc.) ---
+    $escaped_url = preg_quote( $upload_url, '#' );
+    $pattern = '#(' . $escaped_url . '/[^\s"\')\,\>\;]+\.(jpe?g|png|gif|bmp|tiff?))(?=[\s"\')\,\>\;])#i';
+
+    $html = preg_replace_callback( $pattern, function( $match ) use ( $upload_path, $upload_url ) {
+        return skylark_webp_resolve( $match[1], $match[2], $upload_path, $upload_url );
+    }, $html );
+
+    // --- Pass 2: Rewrite JSON-LD escaped URLs (e.g. http:\/\/...\/file.png) ---
+    $json_url = str_replace( '/', '\\/', $upload_url );
+    $escaped_json = preg_quote( $json_url, '#' );
+    $json_pattern = '#(' . $escaped_json . '/[^\s"\')\,\>\;]+\.(jpe?g|png|gif|bmp|tiff?))(?=[\s"\')\,\>\;])#i';
+
+    $html = preg_replace_callback( $json_pattern, function( $match ) use ( $upload_path, $upload_url, $json_url ) {
+        $normal_url = str_replace( '\\/', '/', $match[1] );
+        $result = skylark_webp_resolve( $normal_url, $match[2], $upload_path, $upload_url );
+        if ( $result !== $normal_url ) {
+            return str_replace( '/', '\\/', $result );
+        }
+        return $match[0];
+    }, $html );
+
+    return $html;
+}
+
+function skylark_webp_resolve( $image_url, $ext, $upload_path, $upload_url ) {
+    $relative  = str_replace( $upload_url, '', $image_url );
+    $relative  = str_replace( '/', DIRECTORY_SEPARATOR, $relative );
+    $file_path = $upload_path . $relative;
+
+    // Priority 1: file.ext.webp (e.g. photo.png.webp)
+    if ( file_exists( $file_path . '.webp' ) ) {
+        return $image_url . '.webp';
+    }
+
+    // Priority 2: file.webp (e.g. photo.webp)
+    $webp_path = preg_replace( '/\.' . preg_quote( $ext, '/' ) . '$/i', '.webp', $file_path );
+    $webp_url  = preg_replace( '/\.' . preg_quote( $ext, '/' ) . '$/i', '.webp', $image_url );
+    if ( file_exists( $webp_path ) ) {
+        return $webp_url;
+    }
+
+    return $image_url;
+}
